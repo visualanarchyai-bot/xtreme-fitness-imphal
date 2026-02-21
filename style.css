@@ -1,0 +1,50 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 60px;
+  background: linear-gradient(black, #111);
+}
+
+h1 {
+  color: red;
+  font-size: 40px;
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.call {
+  background: red;
+}
+
+.whatsapp {
+  background: green;
+}
+
+section {
+  padding: 40px;
+}
+
+.card {
+  background: #111;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 20px;
+  background: #111;
+}
