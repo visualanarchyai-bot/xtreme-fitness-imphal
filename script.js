@@ -1,0 +1,1 @@
+console.log("Gym website loaded");
