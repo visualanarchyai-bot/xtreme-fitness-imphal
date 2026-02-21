@@ -1,1 +1,1 @@
-console.log("Gym website loaded");
+console.log("Xtreme Fitness Imphal Loaded");
