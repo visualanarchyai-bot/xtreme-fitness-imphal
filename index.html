@@ -1,245 +1,93 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Xtreme Fitness Imphal</title>
+<title>FrameForge Studio</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/frameforge.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-<style>
-.whatsapp-float {
-position: fixed;
-width: 60px;
-height: 60px;
-bottom: 25px;
-right: 25px;
-background-color: #ff1e1e;
-color: #fff;
-border-radius: 50%;
-text-align: center;
-font-size: 30px;
-box-shadow: 0 0 20px rgba(255,0,0,0.6);
-z-index: 1000;
-}
-.whatsapp-float i {
-margin-top: 16px;
-}
-</style>
-
 </head>
-
 <body class="is-preload">
-
 <div id="wrapper" class="fade-in">
+  <div id="intro" class="hero-studio">
+    <div class="eyebrow">Open HTML video authoring</div>
+    <h1>FrameForge<br />Studio</h1>
+    <p>Write HTML. Preview motion. Export a browser-recorded WebM locally — no hosted render bill required.</p>
+    <ul class="actions">
+      <li><a href="#studio" class="button primary large scrolly">Launch Free Studio</a></li>
+      <li><a href="#how-it-works" class="button large scrolly">How it works</a></li>
+    </ul>
+  </div>
 
-<!-- INTRO HERO -->
-<div id="intro">
+  <header id="header"><a href="index.html" class="logo">FrameForge Studio</a></header>
+  <nav id="nav">
+    <ul class="links">
+      <li class="active"><a href="#intro">Home</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">Workflow</a></li>
+    </ul>
+  </nav>
 
-<h1>XTREME FITNESS<br />IMPHAL</h1>
+  <div id="main">
+    <article class="post featured product-card">
+      <header class="major">
+        <span class="date">Built for local-first creators</span>
+        <h2>HTML-native video mockups you can run for free</h2>
+        <p>FrameForge is a lightweight, static HyperFrames-style playground. Compose scenes with HTML, CSS, and timing attributes, preview them instantly, and record the animated preview in your browser.</p>
+      </header>
+      <div class="terminal-demo" aria-label="Example composition code">
+        <div class="terminal-bar"><span></span><span></span><span></span><strong>composition.html</strong></div>
+<pre><code>&lt;section data-duration="6" class="scene"&gt;
+  &lt;h1 data-start="0.4" data-end="3.5"&gt;Launch day&lt;/h1&gt;
+  &lt;p data-start="1.1" data-end="5"&gt;Animate with plain CSS&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </article>
 
-<p>
-Premium Gym Experience in Manipur<br />
-Modern Equipment • Expert Trainers • Real Results
-</p>
+    <section id="studio" class="studio-panel">
+      <header class="major">
+        <h2>Free in-browser studio</h2>
+        <p>Edit the composition below, render the preview, then record a WebM from your screen/canvas using browser APIs.</p>
+      </header>
+      <div class="studio-grid">
+        <div class="editor-card">
+          <div class="card-heading"><h3>Composition HTML</h3><button id="loadExample" class="button small">Reset example</button></div>
+          <textarea id="compositionInput" spellcheck="false"></textarea>
+          <ul class="actions fit">
+            <li><button id="renderPreview" class="button primary fit">Render Preview</button></li>
+            <li><button id="recordPreview" class="button fit">Record 8s WebM</button></li>
+          </ul>
+          <p id="statusText" class="status-text">Ready. Your work stays in this browser tab.</p>
+        </div>
+        <div class="preview-card">
+          <div class="card-heading"><h3>Preview stage</h3><span>16:9</span></div>
+          <iframe id="previewFrame" title="FrameForge preview"></iframe>
+        </div>
+      </div>
+    </section>
 
-<ul class="actions">
-<li>
-<a href="#main" class="button icon solid solo fa-arrow-down scrolly">
-Continue
-</a>
-</li>
-</ul>
+    <section class="posts" id="features">
+      <article><header><h2>Timed clips</h2></header><p>Use <code>data-start</code>, <code>data-end</code>, and CSS animations to sequence titles, overlays, and cards.</p></article>
+      <article><header><h2>Local export</h2></header><p>Record the preview to WebM with MediaRecorder. No account, subscription, or cloud renderer is needed.</p></article>
+      <article><header><h2>Agent friendly</h2></header><p>The single-file composition format is easy for coding agents to generate, review, and version in Git.</p></article>
+      <article><header><h2>Open building blocks</h2></header><p>Start with plain HTML/CSS/JS, then add your own chart, caption, and transition snippets as reusable blocks.</p></article>
+    </section>
 
+    <section id="how-it-works" class="workflow-section">
+      <header class="major"><h2>How to use it</h2></header>
+      <ol class="workflow-list">
+        <li><strong>Write HTML</strong><span>Describe each scene as normal markup with classes and timing attributes.</span></li>
+        <li><strong>Style motion</strong><span>Add CSS keyframes or inline scripts that are safe to replay in the iframe preview.</span></li>
+        <li><strong>Preview locally</strong><span>FrameForge injects your composition into an isolated stage and loops the timeline.</span></li>
+        <li><strong>Record output</strong><span>Use the built-in recorder for a quick WebM, or capture the stage with your favorite free screen recorder.</span></li>
+      </ol>
+    </section>
+  </div>
+
+  <footer id="footer"><section><h3>FrameForge Studio</h3><p>A free, local-first HTML-to-video playground inspired by open-source HTML video tooling.</p></section></footer>
 </div>
-
-<!-- HEADER -->
-<header id="header">
-<a href="index.html" class="logo">XTREME FITNESS IMPHAL</a>
-</header>
-
-<!-- NAV -->
-<nav id="nav">
-
-<ul class="links">
-<li class="active"><a href="#intro">Home</a></li>
-<li><a href="#membership">Membership</a></li>
-<li><a href="#trainers">Trainers</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-<!-- MAIN -->
-<div id="main">
-
-<!-- FEATURE -->
-<article class="post featured">
-
-<header class="major">
-<h2>Transform Your Body</h2>
-<p>
-Professional equipment.<br />
-Professional results.
-</p>
-</header>
-
-<a class="image main">
-<img src="images/pic01.jpg" alt="">
-</a>
-
-<ul class="actions special">
-<li>
-<a href="https://wa.me/919999999999"
-class="button primary large">
-Join on WhatsApp
-</a>
-</li>
-</ul>
-
-</article>
-
-<!-- MEMBERSHIP -->
-<section class="posts" id="membership">
-
-<article>
-<header>
-<h2>Monthly Plan</h2>
-</header>
-
-<img src="images/pic02.jpg" class="image fit">
-
-<p>
-Unlimited access<br>
-Trainer support
-</p>
-
-<h3>₹1500</h3>
-
-</article>
-
-<article>
-<header>
-<h2>Quarterly Plan</h2>
-</header>
-
-<img src="images/pic03.jpg" class="image fit">
-
-<p>
-Best value<br>
-Faster results
-</p>
-
-<h3>₹4000</h3>
-
-</article>
-
-<article>
-<header>
-<h2>Yearly Plan</h2>
-</header>
-
-<img src="images/pic04.jpg" class="image fit">
-
-<p>
-Maximum savings<br>
-Premium support
-</p>
-
-<h3>₹12000</h3>
-
-</article>
-
-</section>
-
-<!-- TRAINERS -->
-<section class="posts" id="trainers">
-
-<article>
-<header>
-<h2>Strength Coach</h2>
-</header>
-
-<img src="images/pic05.jpg" class="image fit">
-
-<p>Strength and conditioning expert</p>
-
-</article>
-
-<article>
-<header>
-<h2>Fitness Trainer</h2>
-</header>
-
-<img src="images/pic06.jpg" class="image fit">
-
-<p>Fat loss and conditioning programs</p>
-
-</article>
-
-<article>
-<header>
-<h2>Personal Trainer</h2>
-</header>
-
-<img src="images/pic07.jpg" class="image fit">
-
-<p>Customized transformation plans</p>
-
-</article>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-
-<header class="major">
-<h2>Contact</h2>
-</header>
-
-<p>
-
-Xtreme Fitness Imphal<br>
-Imphal, Manipur<br><br>
-
-Phone: +91 99999 99999<br>
-WhatsApp: +91 99999 99999<br><br>
-
-Open Daily: 6 AM – 10 PM
-
-</p>
-
-<ul class="actions special">
-<li>
-<a href="https://wa.me/919999999999"
-class="button primary">
-Message on WhatsApp
-</a>
-</li>
-</ul>
-
-</section>
-
-</div>
-
-<!-- FOOTER -->
-<footer id="footer">
-<section>
-<h3>Xtreme Fitness Imphal</h3>
-<p>Premium gym demo website</p>
-</section>
-</footer>
-
-</div>
-
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/919999999999"
-class="whatsapp-float">
-<i class="icon brands fa-whatsapp"></i>
-</a>
-
-<!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -247,6 +95,6 @@ class="whatsapp-float">
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script src="assets/js/frameforge.js"></script>
 </body>
 </html>
